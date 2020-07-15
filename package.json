@@ -1,0 +1,26 @@
+{
+  "name": "hotbox",
+  "version": "0.0.1",
+  "description": "A smooth Dropbox style UI on top of S3",
+  "main": "dist/index.js",
+  "repository": "https://github.com/C-Sinclair/hotbox",
+  "author": "Conor Sinclair ",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "rollup -cw",
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "rollup": "^2.21.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-watch": "^4.3.1",
+    "typescript": "^3.9.6"
+  }
+}

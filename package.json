@@ -6,10 +6,12 @@
   "repository": "https://github.com/C-Sinclair/hotbox",
   "author": "Conor Sinclair ",
   "license": "MIT",
-  "private": false,
+  "private": false, 
   "scripts": {
-    "start": "rollup -cw",
-    "build": "rollup -c"
+    "start": "parcel src/index.html --open",
+    "prebuild": "yarn clean",
+    "build": "parcel build src/index.html --no-sourcemaps",
+    "clean": "rm -rf ./dist"
   },
   "dependencies": {
     "react": "^16.13.1",
@@ -18,9 +20,7 @@
   "devDependencies": {
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
-    "rollup": "^2.21.0",
-    "rollup-plugin-typescript": "^1.0.1",
-    "rollup-watch": "^4.3.1",
+    "parcel-bundler": "^1.12.4",
     "typescript": "^3.9.6"
   }
 }

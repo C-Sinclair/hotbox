@@ -1,0 +1,5 @@
+export * from './GlobalStyles'
+export * from './Main'
+export * from './HeadingText'
+export * from './Logo'
+export * from './Centred'

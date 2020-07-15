@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { render } from 'react-dom'
-import { GlobalStyle, Main, HeadingText, Logo, Centred } from '~/components'
+import { GlobalStyle, Main, HeadingText, Logo, Centred, EnterIcon } from '~/components'
 
 const App = () => {
+
+    const [logoHidden, setLogoHidden] = useState(false)
+
+    const onEnterClick = () => {
+        setLogoHidden(true)
+    }
     
     return (
         <>
@@ -10,8 +16,9 @@ const App = () => {
         <Main>
             <HeadingText>Hotbox</HeadingText>
             <Centred>
-                <Logo />
+                <Logo hide={logoHidden} />
             </Centred>
+            <EnterIcon onClick={onEnterClick}/>
         </Main>
         </>
     )

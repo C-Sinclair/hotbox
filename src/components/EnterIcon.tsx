@@ -1,8 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Icon: React.FC = (props) => (
-    <svg id="Layer_1" enable-background="new 0 0 512 512" height="80" viewBox="0 0 512 512"
+interface IconProps {
+    onClick: () => void
+}
+
+const Icon: React.FC<IconProps> = (props) => (
+    <svg id="Layer_1" enableBackground="new 0 0 512 512" height="80" viewBox="0 0 512 512"
     xmlns="http://www.w3.org/2000/svg" {...props}>
         <g>
             <circle cx="361.454" cy="42.134" r="42.134"/>

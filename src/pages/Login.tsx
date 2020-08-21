@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import { CognitoUserPool, CognitoUser, AuthenticationDetails, CognitoUserSession } from 'amazon-cognito-identity-js'
 import env from '../.env'
 import { navigate } from '@reach/router'
-
-const ACCESS_TOKEN = 'HB_X_ACCESS_TOKEN'
+import { ACCESS_TOKEN } from '../constants'
 
 const Form = styled.form`
     width: 100vw;

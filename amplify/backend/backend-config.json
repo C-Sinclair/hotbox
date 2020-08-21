@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"hotbox8b8b5e85": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"storage": {
+		"hotstore": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

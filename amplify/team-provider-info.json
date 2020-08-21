@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-hotbox-dev-200728-authRole",
+            "UnauthRoleArn": "arn:aws:iam::344341892059:role/amplify-hotbox-dev-200728-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::344341892059:role/amplify-hotbox-dev-200728-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-hotbox-dev-200728-deployment",
+            "UnauthRoleName": "amplify-hotbox-dev-200728-unauthRole",
+            "StackName": "amplify-hotbox-dev-200728",
+            "StackId": "arn:aws:cloudformation:us-east-1:344341892059:stack/amplify-hotbox-dev-200728/90d052e0-e3e1-11ea-93a6-0a95249d7817",
+            "AmplifyAppId": "d29a8qfec7ub8m"
+        },
+        "categories": {
+            "auth": {
+                "hotbox8b8b5e85": {}
+            }
+        }
+    }
+}

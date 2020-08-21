@@ -1,0 +1,1 @@
+export const ACCESS_TOKEN = 'HB_X_ACCESS_TOKEN'

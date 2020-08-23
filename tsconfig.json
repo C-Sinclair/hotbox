@@ -8,7 +8,8 @@
         "module": "esnext",
         "lib": [
             "ESNext",
-            "DOM"
+            "ES2017",
+            "dom"
         ],
         "moduleResolution": "node",
         "noImplicitAny": true,
@@ -18,7 +19,11 @@
         "preserveConstEnums": true,
         "target": "es5",
         "paths": {
-            "~/*": [ "./*" ]
+            "~/*": [ "./modules/*" ],
+            "@constants": ["./constants"],
+            "@components": ["./modules/shared/view"],
+            "@routes": ["./modules/shared/routes"],
+            "@util": ["./modules/shared/util"]
         },
         "typeRoots": [
             "node_modules/@types",

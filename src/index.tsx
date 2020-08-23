@@ -1,20 +1,20 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Router } from '@reach/router'
-import { GlobalStyle } from '~/components'
-import { Home, Login, Bunker } from './pages'
+import { GlobalStyle } from '@components'
+import { Router } from '@routes'
+import Amplify from 'aws-amplify'
+import { Providers } from '~/shared/providers'
+//@ts-ignore
+import awsconfig from './aws-exports'
+
+Amplify.configure(awsconfig)
 
 const App = () => {
-
     return (
-        <>
-        <GlobalStyle />
-        <Router>
-            <Home path='/' />
-            <Login path='/login' />
-            <Bunker path='/bunker' />
-        </Router>
-        </>
+        <Providers>
+            <GlobalStyle />
+            <Router/>
+        </Providers>
     )
 }
 

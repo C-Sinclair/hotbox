@@ -1,5 +1,13 @@
-import { createContext } from "react"
+import { createContext, Dispatch, SetStateAction } from "react"
 
-export interface UploadContextProps {}
+export interface UploadContextProps {
+    show: boolean
+    setShow: Dispatch<SetStateAction<boolean>>
+}
 
-export const UploadContext = createContext<UploadContextProps>({})
+const initialValue = {
+    show: false,
+    setShow: () => {}
+}
+
+export const UploadContext = createContext<UploadContextProps>(initialValue)

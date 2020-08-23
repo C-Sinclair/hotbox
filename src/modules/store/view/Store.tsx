@@ -1,6 +1,6 @@
 import React from 'react'
-import { Main, HeadingText, Fab } from '@components'
 import { RiUploadCloud2Line as UploadIcon } from 'react-icons/ri'
+import { Main, HeadingText, Fab } from '../../shared/view'
 import { useUploadDialog } from '../logic'
 
 interface StoreProps {
@@ -8,7 +8,7 @@ interface StoreProps {
 }
 
 export const Store = ({}: StoreProps) => {
-    const showUpload = useUploadDialog()
+    const { show: showUpload } = useUploadDialog()
 
     return (
         <Main>

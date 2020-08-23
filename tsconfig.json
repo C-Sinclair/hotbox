@@ -19,10 +19,10 @@
         "preserveConstEnums": true,
         "target": "es5",
         "paths": {
-            "~/*": [ "./modules/*" ],
             "@constants": ["./constants"],
             "@components": ["./modules/shared/view"],
             "@routes": ["./modules/shared/routes"],
+            "@shared": ["./modules/shared"],
             "@util": ["./modules/shared/util"]
         },
         "typeRoots": [

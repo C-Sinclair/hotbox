@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 //@ts-ignore
-import logo from '~/assets/logo.png'
+import logo from '../../../assets/logo.png'
 
 export interface LogoProps {
     hide?: boolean

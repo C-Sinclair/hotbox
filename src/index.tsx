@@ -1,9 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { GlobalStyle } from '@components'
-import { Router } from '@routes'
 import Amplify from 'aws-amplify'
-import { Providers } from '~/shared/providers'
+import { GlobalStyle } from './modules/shared/view'
+import { Router } from './modules/shared/routes'
+import { Providers } from './modules/shared/providers'
 //@ts-ignore
 import awsconfig from './aws-exports'
 

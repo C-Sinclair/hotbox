@@ -1,9 +1,9 @@
 import React from 'react'
 import { Router as ReachRouter } from '@reach/router'
 import { compose, map, values } from 'ramda'
-import { Login } from "~/auth";
-import { Home } from "~/home";
-import { Store } from "~/store";
+import { Login } from "../auth";
+import { Home } from "../home";
+import { Store } from "../store";
 
 interface Route {
     path: string
@@ -16,11 +16,11 @@ export const Routes: { [key: string]: Route } = {
         View: Home
     },
     Login: {
-        path: '/',
+        path: '/login',
         View: Login
     },
     Store: {
-        path: '/',
+        path: '/store',
         View: Store
     },
 }

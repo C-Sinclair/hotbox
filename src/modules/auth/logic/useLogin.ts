@@ -1,7 +1,7 @@
 import { useReducer } from "react"
 import { Auth } from 'aws-amplify'
 import { useNavigate } from '@reach/router'
-import { Routes } from '@routes'
+import { Routes } from '../../shared/routes'
 
 interface LoginState {
     username: string

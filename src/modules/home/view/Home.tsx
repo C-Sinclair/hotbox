@@ -1,6 +1,6 @@
 import React from 'react'
 import { navigate } from '@reach/router'
-import { Main, HeadingText, Logo, Centred, EnterIcon } from '@components'
+import { Main, HeadingText, Logo, Centred, EnterIcon } from '../../shared/view'
 
 interface HomeProps {
     path: '/'
